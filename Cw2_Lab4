@@ -1,0 +1,51 @@
+Program: 
+#include <stdio.h>
+#include <signal.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+void a()
+{
+    printf("podpunkt a.)\n");
+    exit(0);
+}
+
+void b()
+{
+    printf("podpunkt b.)\n");
+}
+
+void c()
+{
+    printf(podpunkt c.)\n);
+    for (int i = 0; i<100; i++)
+    {
+        printf("%d \n", i);
+        sleep(1);
+    }
+}
+
+void d(){}
+
+
+int main() 
+{
+
+    signal(SIGTERM, a);
+    signal(SIGALRM, b);
+    signal(SIGUSR1, c);
+    signal(SIGUSR2, d);
+    int i=0;
+
+    while(i)  
+    {
+        a++;
+        printf( "%d \n", a);
+        sleep(1);
+    }
+return 0;
+}
+
+
+
+
