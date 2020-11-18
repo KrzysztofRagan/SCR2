@@ -1,0 +1,44 @@
+Zapoznano się z narzędziem proc i odczytano pli status procesu "program".
+
+
+krzysztofragan@krzysztofragan-VirtualBox:/proc/46453$ ls
+arch_status      environ    mountinfo      personality   statm
+attr             exe        mounts         projid_map    status
+autogroup        fd         mountstats     root          syscall
+auxv             fdinfo     net            sched         task
+cgroup           gid_map    ns             schedstat     timers
+clear_refs       io         numa_maps      sessionid     timerslack_ns
+cmdline          limits     oom_adj        setgroups     uid_map
+comm             loginuid   oom_score      smaps         wchan
+coredump_filter  map_files  oom_score_adj  smaps_rollup
+cpuset           maps       pagemap        stack
+cwd              mem        patch_state    stat
+
+krzysztofragan@krzysztofragan-VirtualBox:/proc/46453$ cat status
+Name:	program
+Umask:	0002
+State:	S (sleeping)
+Tgid:	46453
+Ngid:	0
+Pid:	46453
+PPid:	850
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	64
+Groups:	4 24 27 30 46 115 135 1000 
+NStgid:	46453
+NSpid:	46453
+NSpgid:	46453
+NSsid:	46453
+VmPeak:	  742040 kB
+VmSize:	  676504 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   29528 kB
+VmRSS:	   22640 kB
+.
+.
+.
+
+
