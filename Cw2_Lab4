@@ -46,6 +46,12 @@ int main()
 return 0;
 }
 
+-------------------------------------------------
+Do programu zostały dodane następujące signal handlery:
+sygnał kill wyświetla się komunikat o konczeniu programu.
+sygnał kill -14 (SIGALRM) wyświetla się komunikat alarmowy.
+sygnał kill -10 (SIGUSR1) wyświetla się komunikat o wstrzymaniu
+sygnał kill -12 (SIGUSR2) bez zmian.
 
 
 
